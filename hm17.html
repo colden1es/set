@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="new_window()">Открыть сайт</button>
+    <button onclick="close_window()">Закрыть сайт</button>
+    <button onclick="new_history()">Узнать кол-во страниц в истории вкладки</button>
+    <script>
+    function new_window() {
+        newWin = window.open("https://itstep.org", "W3wind", "resizeble")
+        newWin.resizeTo(640, 480);
+    }
+    
+    function close_window() {
+        newWin.close() = window.close("https://itstep.org")
+    }
+
+    function new_history() {
+        newHist = history.length()
+    }
+    </script>
+</body>
+</html>

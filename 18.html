@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div, p{
+        border: 1px solid silver;
+        display: inline-block;
+        height: 100px;
+        margin: 10px;
+        text-align: center;
+        width: 100px;
+    }
+
+    button{
+        padding: 40px;
+        margin: 30px;
+    }
+</style>
+<body>
+    <div id="d1" class="c1">0</div>
+    <div id="d2" class="c2">1</div>
+    <div id="d3" class="c3">2</div>
+    <div id="p" class="c1">3</div>
+    <div id="p" class="c2" name="блоокк">4</div>
+    <div id="p" class="c3" name="блоооккк">5</div>
+    <br>
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <br>
+    <button onclick="selC1()">c1</button>
+    <button onclick="selC2()">c2</button>
+    <button onclick="selC3()">c3</button>
+
+    <script>
+        function selC1() {
+            var els = document.documentElement.querySelector(p, c2)
+            for(el of els){
+                el.style.p = "input"
+            }
+        }
+        
+        function selC2() {
+            var els = document.documentElement.querySelector(p, c2, d1)
+            for(el of els){
+                el.style.p = "input"
+            }
+        }
+        
+        function selC3() {
+            var els = document.documentElement.querySelector(name)
+            for(el of els){
+                el.style.p = "input"
+            }
+        }
+    </script>
+</body>
+</html>

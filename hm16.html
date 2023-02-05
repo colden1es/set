@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #colorBlock{
+        width: 250px;
+        height: 250px;
+        background-color: rgb(127, 199, 199);
+        display: inline-block;
+    }
+
+    #colorBlock2{
+        width: 250px;
+        height: 250px;
+        background-color: rgb(100, 100, 100);
+        display: inline-block;
+    }
+</style>
+</head>
+<body>
+    <div id="colorBlock"></div> <div id="colorBlock"></div> <div id="colorBlock"></div> 
+    <div id="colorBlock2"></div>
+    <script>
+    colorBlock2.addEventListener("click", function(){
+    colorBlock2.style.backgroundColor = 
+    `rgb(${Math.round(Math.random()*255)},
+    ${Math.round(Math.random()*255)},
+    ${Math.round(Math.random()*255)})`       
+})
+    </script>
+</body>
+</html>
